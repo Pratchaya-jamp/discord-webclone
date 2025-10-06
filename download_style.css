@@ -1,0 +1,133 @@
+.language{
+  display:flex;
+  user-select: none;
+}
+.language .lang-container {
+  position: relative;
+}
+
+.language .lang-selector-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.language .locale-container{
+  display: flex;
+  align-items: center;
+}
+
+.language .flag {
+  width: 24px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.language .selector-language-name{
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.language .arrow-icon{
+  padding-left: 8px;
+}
+
+.language .lang-dropdown-container {
+  z-index: 10;
+  bottom: 100%;
+  margin-bottom: 8px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  display: none;
+}
+
+.language .lang-dropdown {
+  max-height: 320px;
+  min-width: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.language .dropdown-item{
+  padding: 8px;
+}
+
+.language .dropdown-clickable{
+  cursor: pointer;
+}
+
+.language .dropdown-language-name{
+  color: #23272a;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.flag-en{
+  content:url("https://assets-global.website-files.com/6257adef93867e50d84d30e2/6257bf8b5ba300233705a542_en.png");
+}
+
+.nav-bar-hack {
+  bottom: 0px !important;
+  height: auto !important;
+}
+
+body a.w-webflow-badge {
+  display: none !important;
+}
+
+@media screen and (max-width: 476px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.hr-style {
+border: 0;
+height: 8px;
+background-color: #F0F0F0;
+margin: 20px 0px;
+}
+
+.BlogBodyQuote {
+grid-column: 2/-1;
+font-size: 24px;
+line-height: 36px;
+padding: 0px 0px 15px 40px;
+font-style: italic;
+margin: 40px 0px 50px 0px;
+}
+
+.quote-text {
+width: 100%;
+margin-top: 10px;
+}
+
+.quote-icon {
+position: relative;
+top: 16px;
+}
+
+footer.quote-footer {
+font-size: 16px;
+margin-top: 20px;
+font-style: normal;
+}
+
+@media only screen and (max-width: 480px) {
+  #localize-widget a, #localize-active-lang {
+    padding:0 10px !important;
+    min-width:auto !important;
+    font-size:13px !important;
+    height:33px !important;
+    line-height:32px !important;
+  }
+}
+
+.ot-floating-button__front {
+  background-image:url('https://optanon.blob.core.windows.net/logos/static/ot_persistent_cookie.png')
+  }

@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: url("./assets/bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+}
+
+body .card {
+    width: 30rem;
+    height: auto;
+    margin: 0px auto;
+    background-color: rgb(49,51,56);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body .card .left-side {
+    text-align: center;
+}
+
+body .card .left-side p {
+    color: rgb(148,155,164);;
+}
+
+body .card .left-side .input-box {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+body .card .left-side .input-box label {
+    padding: 5px 0px;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: rgb(181,186,193);
+}
+
+body .card .left-side .input-box label span {
+    color: rgb(225,62,65);
+}
+
+body .card .left-side .input-box input {
+    background-color: rgb(30,31,34);
+    color: rgb(209,212,215);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body .card .left-side .forgot-pwd {
+    text-align: left;
+    font-size: 0.8em;
+}
+
+body .card .left-side .forgot-pwd a {
+    color: rgb(0,167,250);
+}
+
+body .card .left-side button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(88,101,242);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body .card .left-side .register {
+    text-align: left;
+    font-size: 0.8em;
+    color: rgb(148,155,164);
+}
+
+body .card .left-side .register a {
+    color: rgb(0,167,250);
+}
+
+body .card .right-side {
+    display: none;
+}
+
+@media only screen and (min-width: 700px) {
+    body .card {
+        display: flex;
+        flex-direction: row;
+        width: 50rem;
+    }
+
+    body .card .left-side {
+        width: 50%;
+    }
+
+    body .card .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 50%;
+        padding: 0 0 0 40px;
+    }
+
+    body .card .right-side .qrcode {
+        width: 10em;
+        height: 10em;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+
+    body .card .right-side h1 {
+        width: 13rem;
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    body .card .right-side p {
+        text-align: center;
+        width: 15rem;
+        font-size: 1em;
+    }
+
+    body .card .right-side span {
+        font-weight: bold;
+    }
+}
